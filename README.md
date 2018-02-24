@@ -13,3 +13,18 @@ There may be a case if total number of files is less than 10(being over concerne
 
 #regroup.py
 
+We import shutil ,fnmatch modules to make life simpler.
+fnmatch module juxtaposes file names against glob stye patterns by Unix shells per se.In lame words it is a string matching operation.fnmacth() compares a specific fie name against a pattern(such a s.mp3) given and returns a boolean indicating whether they match or not.
+
+shutil module trims down the work needed to copy/move  files and directories.
+shutil.copy(src,dest) is the syntax.If the filename already exists at the destination,it will be overwritten.
+
+
+SUbsequently we define  function to that takes in file extension as input and sorts fies into folders based on their extensons.
+List all the files in the directory chosen using os.listdir(dirctory_name).For every file listed use fnmatch.fnmatch(filename,pattern) to check whether the file has an extension in the given list of extensions and if the file exists 
+creae a directory with name as that of extension.If  a file  pops up with similar extension in the following iterations it is copied in the same directory.
+
+Define the function 'org_by_ext' with all the possible file extensions you could possibly have.
+The function to sort based on first letter/number also goes on similar lines.
+Define function 'org_by_char/int' with a string of alphabets and numbers to be scrutinized against.
+We use capitalize function to convert the first letters of the file into upper case and compare them with capitalized letters in the list.This is done in order to counter the case that files may have first letter in upper or lower case.We convert them into upper case by default to compare.
