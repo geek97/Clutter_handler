@@ -1,3 +1,5 @@
+#Size.py
+
 OS module furnishes us with functions for working with files and directories.
 The call for OS.walk commands it to 'walk' through all the directories and sub-directories recursively.The string "."
 is an inidcative to start in the current directory.
@@ -8,3 +10,6 @@ we create a file name by concatenating the directory name with the name of the f
 In the following lines we get size of each file and append it into a list along with the corresponding file name.I prefereed to display size in GB beacuse the code produces 10 largest files on PC.
 
 There may be a case if total number of files is less than 10(being over concerned).The 'if' loop in line 12 takes care of such petty things.
+
+#regroup.py
+
